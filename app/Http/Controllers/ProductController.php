@@ -3,12 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Models\Product;
 class ProductController extends Controller
 {
  
     //
          function index(){
-        return "the password of email does not match";
+        return Product::all();
          }
 }
